@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>left_treeWidget.qss</file>
+        <file>images/DunKai.ico</file>
+        <file>images/DunKai.png</file>
+    </qresource>
+</RCC>

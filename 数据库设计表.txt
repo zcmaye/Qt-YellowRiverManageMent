@@ -1,0 +1,52 @@
+			user表(用户表)
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| id       | int         | NO   | PRI | NULL    | auto_increment |
+| username | varchar(12) | NO   |     |         |                |
+| nickname | varchar(12) | NO   |     | NULL    |                |
+| password | varchar(12) | NO   |     |         |                |
+| token    | tinyint     | YES  |     | 4       |                |
++----------+-------------+------+-----+---------+----------------+
+
+			freecustomers表(流量表)
++------------+--------------+------+-----+---------------------+----------------+
+| Field      | Type         | Null | Key | Default             | Extra          |
++------------+--------------+------+-----+---------------------+----------------+
+| id         | int          | NO   | PRI | NULL                | auto_increment |
+| qq         | varchar(12)  | NO   |     |                     |                |
+| tel        | varchar(11)  | NO   |     |                     |                |
+| weixin     | varchar(32)  | NO   |     |                     |                |
+| userid     | int          | NO   |     | 0                   |                |
+| assistant  | varchar(12)  | NO   |     |                     |                |
+| entrytime  | datetime     | NO   |     | 1900-01-01 00:00:00 |                |
+| source     | varchar(32)  | NO   |     |                     |                |
+| images     | varchar(255) | NO   |     |                     |                |
+| creater    | varchar(12)  | NO   |     |                     |                |
+| createtime | datetime     | NO   |     | 1900-01-01 00:00:00 |                |
++------------+--------------+------+-----+---------------------+----------------+
+
+
+			desc lectures(听课记录表)
++------------------+-------------+------+-----+------------+----------------+
+| Field            | Type        | Null | Key | Default    | Extra          |
++------------------+-------------+------+-----+------------+----------------+
+| id               | int         | NO   | PRI | NULL       | auto_increment |
+| nickname         | varchar(30) | NO   |     |            |                |
+| qq               | varchar(12) | NO   |     |            |                |
+| weixin           | varchar(25) | NO   |     |            |                |
+| lectures_date    | date        | NO   |     | 1900-01-01 |                |
+| course           | varchar(30) | NO   |     |            |                |
+| lecture_length   | varchar(10) | NO   |     |            |                |
+| lecture_interval | text        | NO   |     | NULL       |                |
++------------------+-------------+------+-----+------------+----------------+
+
+
+
+				course(课程表)
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| id         | int         | NO   | PRI | NULL    | auto_increment |
+| coursename | varchar(50) | NO   |     |         |                |
++------------+-------------+------+-----+---------+----------------+

@@ -1,0 +1,26 @@
+QTreeWidget{
+    background-color: #5B677A;
+    /* set the font properties*/
+    font-size:17px;
+    color: white;
+}
+ 
+QTreeWidget::item{
+    margin:13px;
+    background: #5B677A;
+    background-clip: margin;
+}
+  
+/*选中背景颜色*/
+QTreeWidget::branch:selected,
+QTreeWidget::item:selected
+{
+    background-color:rgb(63, 147, 168);
+}
+
+QTreeView::item:hover,
+QTreeView::branch:hover
+{
+    background: rgb(69, 187, 217);
+}
+ 

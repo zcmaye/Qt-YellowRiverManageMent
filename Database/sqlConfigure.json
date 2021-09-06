@@ -1,0 +1,10 @@
+﻿{
+  "sqlConfigure": 
+  {
+    "HostName": "81.70.201.51",
+    "Port": "3306",
+    "UserName": "root",
+    "PassWord": "dunkaiedu@20190219",
+    "DatabaseName": "yellowriver"
+  }
+}
